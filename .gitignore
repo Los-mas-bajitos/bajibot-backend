@@ -1,0 +1,18 @@
+/venv/
+/instance/
+.pytest_cache/
+__pycache__/
+*.pyc
+
+#Environments
+.env
+
+# PyCharm
+.idea/
+*.iml
+
+# JupyterLab
+.jupyterlab-config
+
+# VS Code
+.vscode/
