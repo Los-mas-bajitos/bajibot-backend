@@ -17,7 +17,7 @@ def create_user():
                 'status': 400
             }
         )
-    user = User(data['username'], data['password'])
+    user = User(data['username'], data['password'], data['preferences'])
     db.session.add(user)
     db.session.commit()
     return jsonify(
@@ -68,6 +68,7 @@ def login_user():
             {
                 'message': 'User logged in',
                 'jwt': create_access_token(identity=user.id),
+                'user': user.to_dict(),
                 'status': 200
             }
         )
