@@ -48,3 +48,6 @@ GEMINI_API_KEY = 'API_KEY'
 ````bash
 python app.py
 ````
+
+## Análisis con Sonarqube
+![Análisis con Sonarqube](https://github.com/user-attachments/assets/f57dc08c-4471-4730-96e4-2ab0d3bd53d8)
